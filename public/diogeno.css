@@ -7,7 +7,7 @@ body {
   font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
   font-size: 62.5%;
   color: #fff;
-  background: #000 url('diogeno-bg.jpg') no-repeat center center fixed;
+  background: #f0424b url('diogeno-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 a {
@@ -17,6 +17,10 @@ a {
 }
 a:hover {
   border: 0;
+}
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
 }
 header {
   padding: 60px;
@@ -40,27 +44,39 @@ header p {
   padding-left: 15px
 }
 
-#content {
+main {
   padding: 0 60px;
 }
-#content section {
+main section {
   margin-bottom: 60px;
   max-width: 800px;
 }
-#content section h2 {
+main section h2 {
   font-weight: normal;
   font-size: 30px;
   line-height: 1.4em;
 }
-#content section h3 {
+main section h3 {
   font-size: 30px;
   line-height: 1em;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-#content section p {
+main section p, main section ul {
   font-size: 20px;
-  line-height: 1.4em;
+  line-height: 1.6em;
+  margin-bottom: 15px;
+}
+main section ul {
+  list-style: none;
+}
+main section li {
+  padding-left: 40px;
+  margin-bottom: 10px;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDMwNiAzMDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwNiAzMDY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iY2hldnJvbi1yaWdodCI+CgkJPHBvbHlnb24gcG9pbnRzPSI5NC4zNSwwIDU4LjY1LDM1LjcgMTc1Ljk1LDE1MyA1OC42NSwyNzAuMyA5NC4zNSwzMDYgMjQ3LjM1LDE1MyAgICIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 14px 8px;
 }
 
 footer {
