@@ -58,7 +58,7 @@ main section h2 {
 }
 main section h3 {
   font-size: 30px;
-  line-height: 1em;
+  line-height: 1.2em;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -115,7 +115,7 @@ main section .member .container {
 main section .member h4 {
   padding-right: 5px;
   font-size: 24px;
-  line-height: 1em;
+  line-height: 1.2em;
   font-weight: bold;
 }
 main section .member h4, main section .member .links {
@@ -172,7 +172,8 @@ footer {
   }
   main section .member .links {
     display: inline-block;
-    padding-top: 5px;
+    padding-top: 10px;
+    height: 34px;
   }
   main section .member .links a:first-child {
     margin-left: 0;
