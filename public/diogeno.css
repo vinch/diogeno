@@ -121,6 +121,9 @@ main section .member h4 {
 main section .member h4, main section .member .links {
   float: left;
 }
+main section .member .links {
+  height: 24px;
+}
 main section .member .links a {
   font-size: 24px;
   border: 0;
@@ -155,16 +158,35 @@ footer {
     float: none;
     line-height: 1.2em;
   }
+  main section .member img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  main section .member .container {
+    height: auto;
+    text-align: center;
+  }
+  main section .member h4, main section .member .links {
+    float: none;
+  }
+  main section .member .links {
+    display: inline-block;
+    padding-top: 5px;
+  }
+  main section .member .links a:first-child {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 500px) {
   header {
     padding: 40px;
   }
-  #content {
+  main {
     padding: 0 40px;
   }
-  #content section {
+  main section {
     margin-bottom: 40px;
   }
   footer {
