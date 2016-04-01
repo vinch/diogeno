@@ -78,6 +78,64 @@ main section li {
   background-repeat: no-repeat;
   background-position: 14px 8px;
 }
+main section .address {
+  padding-left: 20px;
+  border-left: 1px solid #f0424b;
+}
+main section .metro {
+  padding-left: 30px;
+  background-image: url(l4.png);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+main section .member {
+  padding: 20px;
+  border: 1px solid #f0424b;
+  border-bottom: 0;
+  background: rgba(255,255,255,0.1);
+  position: relative;
+}
+main section .member:last-child {
+  border-bottom: 1px solid #f0424b;
+}
+main section .member img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 0 20px 0 0;
+}
+main section .member p {
+  margin-bottom: 0;
+}
+main section .member .container {
+  height: 24px;
+  margin-bottom: 15px;
+}
+main section .member h4 {
+  padding-right: 5px;
+  font-size: 24px;
+  line-height: 1em;
+  font-weight: bold;
+}
+main section .member h4, main section .member .links {
+  float: left;
+}
+main section .member .links a {
+  font-size: 24px;
+  border: 0;
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  margin-left: 5px;
+  color: #aaa;
+}
+main section .member .links a:hover {
+  color: #fff;
+}
 
 footer {
   padding: 0 60px 60px;
