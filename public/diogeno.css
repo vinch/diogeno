@@ -158,26 +158,6 @@ footer {
     float: none;
     line-height: 1.2em;
   }
-  main section .member img {
-    float: none;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  main section .member .container {
-    height: auto;
-    text-align: center;
-  }
-  main section .member h4, main section .member .links {
-    float: none;
-  }
-  main section .member .links {
-    display: inline-block;
-    padding-top: 10px;
-    height: 34px;
-  }
-  main section .member .links a:first-child {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 500px) {
@@ -189,6 +169,25 @@ footer {
   }
   main section {
     margin-bottom: 40px;
+  }
+  main section .member img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  main section .member .container {
+    height: auto;
+  }
+  main section .member h4, main section .member .links {
+    float: none;
+  }
+  main section .member .links {
+    display: inline-block;
+    padding-top: 10px;
+    height: 34px;
+  }
+  main section .member .links a:first-child {
+    margin-left: 0;
   }
   footer {
     padding: 0 40px 40px;
