@@ -4,199 +4,287 @@
   box-sizing: border-box;
 }
 ::selection {
-  background: #f0424b;
+  background: #ddd;
 }
 ::-moz-selection {
-  background: #f0424b;
+  background: #ddd;
 }
 body {
-  font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
+  font-family: 'gesta', 'Helvetica Neue', sans-serif;
   font-size: 62.5%;
-  color: #fff;
-  background: #f0424b url('diogeno-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: #ff5c59;
 }
 a {
-  color: #f0424b;
+  color: #000;
   text-decoration: none;
-  border-bottom: 1px solid #f0424b;
+  border-bottom: 1px solid #ff5c59;
 }
 a:hover {
   border: 0;
 }
 .inner {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  border-left: 1px solid rgba(187,187,187,0.5);
 }
 header {
-  padding: 60px;
-  height: 180px;
+  height: 730px;
+  background: #000 url('diogeno-bg.jpg') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
 }
-h1 {
+header .inner {
+  height: 530px;
+  padding: 50px 0;
+  position: relative;
+}
+header h1 {
   font-family: 'jubilat', 'Times New Roman', serif;
-  font-size: 60px;
+  font-size: 180px;
   line-height: 1em;
   font-weight: 500;
   margin-bottom: 10px;
-  float: left;
+  margin-left: -100px;
+}
+header h2 {
+  position: absolute;
+  top: 480px;
+  left: 225px;
+  color: #fff;
+  background: #ff5c59;
+  padding: 75px 100px;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 50px;
+  height: 350px;
+  z-index: 20;
 }
 header p {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 1em;
-  padding-top: 34px;
-  color: #f0424b;
-  float: left;
-  padding-left: 15px
+  padding-left: 225px;
+  margin-bottom: 80px;
 }
-
+header .social {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+header .social a {
+  color: #fff;
+  border-color: #666;
+}
+header .social a:hover {
+  background: #666;
+}
 main {
-  padding: 0 60px;
+  position: relative;
 }
-main section {
-  margin-bottom: 60px;
+main, footer {
+  background: #fff;
+}
+main .inner {
+  padding: 200px 0 125px 225px;
+}
+section {
+  margin-bottom: 125px;
   max-width: 800px;
+  position: relative;
 }
-main section h2 {
-  font-weight: normal;
+section:last-child {
+  margin: 0;
+}
+section h3 {
+  font-family: 'jubilat', 'Times New Roman', serif;
   font-size: 30px;
-  line-height: 1.4em;
+  color: #ff5c59;
+  line-height: 35px;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
-main section h3 {
-  font-size: 30px;
-  line-height: 1.2em;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-main section p, main section ul {
+section p, section ul {
   font-size: 20px;
-  line-height: 1.6em;
-  margin-bottom: 15px;
+  line-height: 2em;
+  margin-bottom: 50px;
 }
-main section ul {
+section p.introp {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+section ul {
   list-style: none;
 }
-main section li {
-  padding-left: 40px;
-  margin-bottom: 10px;
-  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDMwNiAzMDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwNiAzMDY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iY2hldnJvbi1yaWdodCI+CgkJPHBvbHlnb24gcG9pbnRzPSI5NC4zNSwwIDU4LjY1LDM1LjcgMTc1Ljk1LDE1MyA1OC42NSwyNzAuMyA5NC4zNSwzMDYgMjQ3LjM1LDE1MyAgICIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-position: 14px 8px;
+section.email h2 {
+  font-size: 80px;
+  line-height: 1em;
+  font-weight: 500;
+  font-family: 'jubilat', 'Times New Roman', serif;
+  margin: 0 0 50px -325px;
 }
-main section .address {
+section.email p {
+  font-size: 30px;
+  line-height: 1.6em;
+}
+section.email a {
+  color: #fff;
+}
+#contact {
+  background: #000 url('map.jpg') no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+#contact .inner {
+  padding: 125px 0 125px 225px;
+}
+footer .inner {
+  padding: 125px 0 125px 225px; 
+}
+.social {
+  height: 36px;
+  overflow: auto;
+  zoom: 1;
+}
+.social a {
+  display: block;
+  float: left;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 2px solid;
+}
+.social a span {
+  display: none;
+}
+.social a i {
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+.n {
+  font-family: 'jubilat', 'Times New Roman', serif;
+  color: #ff5c59;
+  font-size: 16px;
+  width: 21px;
+  display: inline-block;
+}
+.letter {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%; 
+  background: #ff5c59;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  font-size: 24px;
+  position: absolute;
+  left: -260px;
+  top: -17.5px;
+  z-index: 20;
+}
+.letter i {
+  display: block;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  font-size: 32px;
+}
+.address {
   padding-left: 20px;
-  border-left: 1px solid #f0424b;
+  border-left: 3px solid #fff;
+  margin: 0;
 }
-main section .metro {
+.address a {
+  color: #fff;
+}
+.metro {
   padding-left: 30px;
   background-image: url(l4.png);
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-main section .member {
-  padding: 20px;
-  border: 1px solid #f0424b;
-  border-bottom: 0;
-  background: rgba(255,255,255,0.1);
+.member {
   position: relative;
+  margin-bottom: 50px;
 }
-main section .member:last-child {
-  border-bottom: 1px solid #f0424b;
+.member:last-child {
+  margin: 0;
 }
-main section .member img {
-  float: left;
-  width: 150px;
-  height: 150px;
-  margin: 0 20px 0 0;
-}
-main section .member p {
-  margin-bottom: 0;
-}
-main section .member .container {
-  height: 24px;
-  margin-bottom: 15px;
-}
-main section .member h4 {
-  padding-right: 5px;
-  font-size: 24px;
-  line-height: 1.2em;
-  font-weight: bold;
-}
-main section .member h4, main section .member .links {
-  float: left;
-}
-main section .member .links {
-  height: 24px;
-}
-main section .member .links a {
-  font-size: 24px;
+.member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #ddd;
   border: 0;
-  display: block;
+  position: absolute;
+  left: -315px;
+  top: -70px;
+  z-index: 10;
+}
+.member .container {
+  overflow: auto;
+  zoom: 1;
+}
+.member h4 {
+  font-size: 20px;
+  line-height: 2em;
+  font-weight: bold;
   float: left;
-  width: 24px;
-  height: 24px;
-  text-align: center;
-  line-height: 24px;
-  margin-left: 5px;
+}
+.member p {
+  margin: 0;
+}
+.member .social {
+  padding-top: 2px;
+  height: 40px;
+}
+.member .social a {
+  border-color: #ddd;
+  color: #000;
+}
+.member .social a:hover {
+  background: #ddd;
+}
+.reed {
+  margin: 0;
+}
+.reed i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5c59;
+  position: absolute;
+  left: -230px;
+  top: 5px;
+}
+.reed p {
+  margin: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   color: #aaa;
 }
-main section .member .links a:hover {
-  color: #fff;
+.reed p a {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(reed.png);
+  background-size: 14px 14px;
+  text-indent: -9999px;
+  vertical-align: -3px;
+  border: 0;
 }
-
-footer {
-  padding: 0 60px 60px;
-  font-size: 20px;
-  line-height: 1.4em;
-}
-
-@media (max-width: 800px) {
-  header {
-    height: auto;
-  }
-  h1 {
-    float: none;
-  }
-  header p {
-    padding: 0;
-    float: none;
-    line-height: 1.2em;
-  }
-}
-
-@media (max-width: 500px) {
-  header {
-    padding: 40px;
-  }
-  main {
-    padding: 0 40px;
-  }
-  main section {
-    margin-bottom: 40px;
-  }
-  main section .member img {
-    float: none;
-    display: block;
-    margin: 0 auto 20px;
-  }
-  main section .member .container {
-    height: auto;
-  }
-  main section .member h4, main section .member .links {
-    float: none;
-  }
-  main section .member .links {
-    display: inline-block;
-    padding-top: 10px;
-    height: 34px;
-  }
-  main section .member .links a:first-child {
-    margin-left: 0;
-  }
-  footer {
-    padding: 0 40px 40px;
-  }
-
+.triangle {
+  width: 100%;
+  height: 200px;
+  background: url(triangle.png);
+  background-size: 100% 200px;
+  position: absolute;
+  bottom: 0;
 }
