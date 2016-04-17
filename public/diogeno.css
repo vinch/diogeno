@@ -386,8 +386,3 @@ footer .inner {
     padding-bottom: 75px;
   }
 }
-@media (max-width: 450px) {
-  header h1, header p {
-    text-align: left;
-  }
-}
