@@ -89,12 +89,12 @@ main .inner {
   padding: 200px 0 125px 225px;
 }
 section {
-  margin-bottom: 125px;
-  max-width: 800px;
+  margin: 0 auto 125px;
+  max-width: 675px;
   position: relative;
 }
 section:last-child {
-  margin: 0;
+  margin: 0 auto;
 }
 section h3 {
   font-family: 'jubilat', 'Times New Roman', serif;
@@ -117,7 +117,7 @@ section ul {
   list-style: none;
 }
 section.email h2 {
-  font-size: 80px;
+  font-size: 75px;
   line-height: 1em;
   font-weight: 500;
   font-family: 'jubilat', 'Times New Roman', serif;
@@ -217,6 +217,7 @@ footer .inner {
   margin: 0;
 }
 .member img {
+  display: block;
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -287,4 +288,106 @@ footer .inner {
   background-size: 100% 200px;
   position: absolute;
   bottom: 0;
+}
+@media (max-width: 1200px) {
+  header h1 {
+    margin-left: 100px;
+  }
+  section.email h2 {
+    margin-left: -125px;
+  }
+}
+@media (max-width: 1080px) {
+  .member img {
+    position: static;
+    margin-bottom: 25px;
+  } 
+}
+@media (max-width: 1000px) {
+  .inner {
+    border: 0;
+  }
+  .letter {
+    display: none;
+  }
+  .reed i {
+    display: none;
+  }
+  main .inner, #contact .inner, footer .inner {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  main .inner {
+    padding-top: 275px;
+  }
+  header {
+    height: auto;
+    margin-bottom: -225px;
+  }
+  header .inner {
+    height: auto;
+    padding: 50px 25px;
+  }
+  header h1 {
+    margin: 0 0 100px;
+    text-align: center;
+    font-size: 120px;
+  }
+  header h2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 675px;
+    height: auto;
+    margin: 0 auto;
+  }
+  header p {
+    padding-left: 0;
+  }
+  header .social {
+    right: 25px;
+  }
+  .triangle {
+    display: none;
+  }
+  section.email h2 {
+    margin-left: 0;
+    font-size: 50px;
+  }
+}
+@media (max-width: 725px) {
+  header h1 {
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+  header h2 {
+    padding: 30px 50px;
+    font-size: 24px;
+    line-height: 1.6em;
+    max-width: 400px;
+  }
+  header p {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 80px;
+  }
+  section {
+    margin-bottom: 75px;
+  }
+  section.email p {
+    font-size: 24px;
+  }
+  main .inner {
+    padding-top: 225px;
+    padding-bottom: 75px;
+  }
+  #contact .inner, footer .inner {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+@media (max-width: 450px) {
+  header h1, header p {
+    text-align: left;
+  }
 }
