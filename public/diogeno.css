@@ -12,6 +12,7 @@
 body {
   font-family: 'gesta', 'Helvetica Neue', sans-serif;
   font-size: 62.5%;
+  font-weight: 300;
   background: #ff5c59;
 }
 a {
@@ -54,7 +55,7 @@ header h2 {
   color: #fff;
   background: #ff5c59;
   padding: 75px 100px;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 30px;
   line-height: 50px;
   height: 350px;
@@ -62,8 +63,9 @@ header h2 {
 }
 header p {
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1em;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
   padding-left: 225px;
   margin-bottom: 80px;
 }
@@ -93,6 +95,14 @@ section {
   max-width: 675px;
   position: relative;
 }
+section li {
+  overflow: auto;
+  zoom: 1;
+}
+section li span {
+  display: block;
+  float: left;
+}
 section:last-child {
   margin: 0 auto;
 }
@@ -104,7 +114,7 @@ section h3 {
   font-weight: 500;
   margin-bottom: 50px;
 }
-section p, section ul {
+section p, section ol {
   font-size: 20px;
   line-height: 2em;
   margin-bottom: 50px;
@@ -113,8 +123,8 @@ section p.introp {
   font-weight: bold;
   margin-bottom: 25px;
 }
-section ul {
-  list-style: none;
+section ol {
+  list-style-type: none;
 }
 section.email h2 {
   font-size: 75px;
@@ -170,8 +180,17 @@ footer .inner {
   font-family: 'jubilat', 'Times New Roman', serif;
   color: #ff5c59;
   font-size: 16px;
-  width: 21px;
-  display: inline-block;
+  font-weight: 500;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 4px;
+}
+.desc {
+  width: -moz-calc(100% - 36px);
+  width: -webkit-calc(100% - 36px);
+  width: -o-calc(100% - 36px);
+  width: calc(100% - 36px);
 }
 .letter {
   height: 70px;
