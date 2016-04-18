@@ -118,7 +118,7 @@ section ul {
 }
 section.email h2 {
   font-size: 75px;
-  line-height: 1em;
+  line-height: 1.2em;
   font-weight: 500;
   font-family: 'jubilat', 'Times New Roman', serif;
   margin: 0 0 50px -325px;
@@ -378,7 +378,7 @@ footer .inner {
     font-size: 24px;
   }
   main .inner {
-    padding-top: 225px;
+    padding-top: 250px;
     padding-bottom: 75px;
   }
   #contact .inner, footer .inner {
