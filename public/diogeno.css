@@ -10,7 +10,7 @@
   background: #ddd;
 }
 body {
-  font-family: 'gesta', 'Helvetica Neue', sans-serif;
+  font-family: "gesta", "Helvetica Neue", sans-serif;
   font-size: 62.5%;
   font-weight: 300;
   background: #ff5c59;
@@ -27,11 +27,11 @@ a:hover {
 .inner {
   max-width: 900px;
   margin: 0 auto;
-  border-left: 1px solid rgba(153,153,153,0.25);
+  border-left: 1px solid rgba(153, 153, 153, 0.25);
 }
 header {
   height: 730px;
-  background: #000 url('diogeno-bg.jpg') no-repeat center;
+  background: #000 url("diogeno-bg.jpg") no-repeat center;
   background-size: cover;
   color: #fff;
   position: relative;
@@ -42,7 +42,7 @@ header .inner {
   position: relative;
 }
 header h1 {
-  font-family: 'jubilat', 'Times New Roman', serif;
+  font-family: "jubilat", "Times New Roman", serif;
   font-size: 180px;
   line-height: 1em;
   font-weight: 500;
@@ -85,7 +85,8 @@ header .social a:hover {
 main {
   position: relative;
 }
-main, footer {
+main,
+footer {
   background: #fff;
 }
 main .inner {
@@ -108,14 +109,15 @@ section:last-child {
   margin: 0 auto;
 }
 section h3 {
-  font-family: 'jubilat', 'Times New Roman', serif;
+  font-family: "jubilat", "Times New Roman", serif;
   font-size: 30px;
   color: #ff5c59;
   line-height: 35px;
   font-weight: 500;
   margin-bottom: 50px;
 }
-section p, section ol {
+section p,
+section ol {
   font-size: 20px;
   line-height: 2em;
   margin-bottom: 50px;
@@ -131,7 +133,7 @@ section.email h2 {
   font-size: 75px;
   line-height: 1.2em;
   font-weight: 500;
-  font-family: 'jubilat', 'Times New Roman', serif;
+  font-family: "jubilat", "Times New Roman", serif;
   margin: 0 0 50px -325px;
 }
 section.email p {
@@ -142,7 +144,7 @@ section.email a {
   color: #fff;
 }
 #contact {
-  background: #000 url('map.jpg') no-repeat center;
+  background: #000 url("map.jpg") no-repeat center;
   background-size: cover;
   color: #fff;
 }
@@ -150,7 +152,7 @@ section.email a {
   padding: 125px 0 125px 225px;
 }
 footer .inner {
-  padding: 125px 0 125px 225px; 
+  padding: 125px 0 125px 225px;
 }
 .social {
   height: 36px;
@@ -169,16 +171,14 @@ footer .inner {
 .social a span {
   display: none;
 }
-.social a i {
+.social a svg {
   display: block;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  text-align: center;
-  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  margin: 9px auto;
 }
 .n {
-  font-family: 'jubilat', 'Times New Roman', serif;
+  font-family: "jubilat", "Times New Roman", serif;
   color: #ff5c59;
   font-size: 16px;
   font-weight: 500;
@@ -196,7 +196,7 @@ footer .inner {
 .letter {
   height: 70px;
   width: 70px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background: #ff5c59;
   color: #fff;
   text-align: center;
@@ -207,12 +207,11 @@ footer .inner {
   top: -17.5px;
   z-index: 20;
 }
-.letter i {
+.letter svg {
   display: block;
-  height: 70px;
-  width: 70px;
-  line-height: 70px;
-  font-size: 32px;
+  height: 32px;
+  width: 32px;
+  margin: 19px auto;
 }
 .address {
   padding-left: 20px;
@@ -245,7 +244,7 @@ footer .inner {
   border: 0;
   position: absolute;
   left: -315px;
-  top: -70px;
+  top: 0;
   z-index: 10;
 }
 .member .container {
@@ -321,7 +320,7 @@ footer .inner {
   .member img {
     position: static;
     margin-bottom: 25px;
-  } 
+  }
 }
 @media (max-width: 1000px) {
   .inner {
@@ -333,7 +332,9 @@ footer .inner {
   .reed i {
     display: none;
   }
-  main .inner, #contact .inner, footer .inner {
+  main .inner,
+  #contact .inner,
+  footer .inner {
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -401,7 +402,8 @@ footer .inner {
     padding-top: 250px;
     padding-bottom: 75px;
   }
-  #contact .inner, footer .inner {
+  #contact .inner,
+  footer .inner {
     padding-top: 75px;
     padding-bottom: 75px;
   }
